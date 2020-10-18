@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./fonts/fa/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="principal-header">
+        <h1 class="principal-title">STAR WARS</h1>
+    </header>
+    <div class="general-container">
+        <aside class="aside-container">
+            <h3 class="aside-container-title">Peliculas</h3>
+            <ul id="films-list">
+                
+            </ul>
+        </aside>
+        <main class="main-container hidden" id="main-container">
+            <h3 class="main-container-title">Descripcion</h3>
+            <div class="films-characters-container">
+                <div class="film-description-container" id="film-description-container">   
+                    <label for="title">Titulo: </label>
+                    <i id="title" class="text-white" ></i><br>
+                    <label for="episode">Episodio: </label>
+                    <i id="episode" class="text-white"></i><br>
+                    <label for="director">Director:</label>
+                    <i id="director" class="text-white"></i><br>
+                    <label for="release_date">Fecha: </label>
+                    <i id="release-date" class="text-white"></i><br>
+                </div>
+                <div class="characters-container">
+                    <h5>Personajes</h5>
+                    <div id="characters-list">
+                        <ul id="characters-list">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="character-info-container" class="character-info-container hidden">
+        <div class="character-info">
+            <label for="character-name">Nombre</label>
+            <i id="character-name"></i><br>
+            <label for="character-height">Altura:</label>
+            <i id="character-height"></i><br>
+            <label for="character-mass">Peso:</label>
+            <i id="character-mass"></i><br>
+            <label for="character-hair">Color de pelo:</label>
+            <i id="character-hair"></i><br>
+            <label for="chararacter-skin">Color de piel:</label>
+            <i id="character-skin"></i><br>
+            <label for="chararacter-eyes">Color de ojos:</label>
+            <i id="character-eyes"></i><br>
+            <label for="character-birth-year">Año de nacimiento:</label>
+            <i id="character-birth-year"></i><br>
+            <label for="character-gender">Genero:</label>
+            <i id="character-gender"></i><br>
+        </div>
+    </div>
+
+    <script src="./javascript/index.js"></script>
+</body>
+</html>

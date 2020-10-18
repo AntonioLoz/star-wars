@@ -10,6 +10,16 @@ function getFilmsFromApi() {
 
         xhr.onload = () => {
             if (xhr.status === 200) {
+                document
+
+                document.getElementById("principal-header").classList.add("hidden-animation");
+                document.getElementById("principal-header").classList.remove("hidden");
+
+                document.getElementById("init").style.display = "none"
+
+                document.getElementById("general-container").classList.add("hidden-animation");
+                document.getElementById("general-container").classList.remove("hidden");
+
                 resolve(JSON.parse(xhr.response));
             } else {
                 reject(`Error: ${xhr.status}
@@ -90,6 +100,6 @@ async function setCharacterInfoInView(url) {
     document.getElementById("character-info-container").classList.add("hidden-animation");
     document.getElementById("character-info-container").classList.remove("hidden");
 }
-
+document.getElementById("init").classList.add("init-animation");
 setFilmsInView();
 

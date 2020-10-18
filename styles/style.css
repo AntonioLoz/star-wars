@@ -12,24 +12,30 @@
 body {
     font-family: star-jedi;
     color: rgba(223,163,40, 1);
-    background: url("../images/background-image.png");
+    background-image: url("../images/init-image.jpg");
     background-size: 100vw 100vh;
     overflow: hidden;
 }
 
-.principal-header {
-    display: flex;
-    justify-content: center;
-}
-
-.principal-title {
-    font-size: 50px;
+#init{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
 }
 
 .clickable {
     opacity: 0.8;
     margin: 0.6em 0em;
     cursor: pointer;
+}
+
+.clickable:hover {
+    opacity: 1;
+}
+
+.init-animation {
+    animation: init-animation 2s linear alternate infinite;
 }
 
 .hidden {
@@ -40,8 +46,13 @@ body {
     animation: hidden-animation 2s linear 0.5;
 }
 
-.clickable:hover {
-    opacity: 1;
+.principal-header {
+    display: flex;
+    justify-content: center;
+}
+
+.principal-title {
+    font-size: 50px;
 }
 
 .general-container{
@@ -73,12 +84,9 @@ body {
 .main-container{
     height: 40vh;
     margin-right: 4em;
-    border: 1px solid;
-    border-color: rgba(223,163,40, 1);
 }
 
 .main-container-title {
-    margin-top: 0.5em;
     margin-left: 1.5em;
     font-size: 25px;
     text-decoration: underline;
@@ -115,7 +123,6 @@ body {
 .character-info-container {
     width: 100vw;
     display: flex;
-    justify-content: flex-end;
     margin: 0vw 0vh 5vh 15vh;
 }
 
@@ -135,4 +142,9 @@ body {
 @keyframes hidden-animation {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@keyframes init-animation {
+    from {opacity: 0.8;}
+    to {opacity: 0;}
 }
